@@ -29,7 +29,7 @@ const elem = React.createElement(
     ),
     React.createElement(
         'div', { className: 'greeting__text' },
-        'I\'m learninng React'
+        'I\'m learning React'
     ),
 );
 

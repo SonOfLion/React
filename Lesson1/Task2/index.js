@@ -22,16 +22,15 @@ const rootElement = document.querySelector('#root');
 // renderGreeting(rootElement);
 
 const elem = React.createElement(
-    'div', { className: 'greeting' }, [
-        React.createElement(
-            'div', { className: 'greeting__title' },
-            'Hello, world!'
-        ),
-        React.createElement(
-            'div', { className: 'greeting__text' },
-            'I/m learninng React'
-        ),
-    ]
+    'div', { className: 'greeting' },
+    React.createElement(
+        'div', { className: 'greeting__title' },
+        'Hello, world!'
+    ),
+    React.createElement(
+        'div', { className: 'greeting__text' },
+        'I\'m learninng React'
+    ),
 );
 
 ReactDOM.render(elem, rootElement)

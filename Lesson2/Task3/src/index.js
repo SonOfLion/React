@@ -22,7 +22,7 @@ const element = (
         className="seconds"
         style={styles}
         >
-        {seconds}
+        Now is {seconds}
     </div>
 );
 

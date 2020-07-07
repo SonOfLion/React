@@ -15,4 +15,4 @@ const element = (
 
 //console.log(element);
 
-ReactDOM.render(element, rootElement);
+ReactDOM.render(rootElement,element);

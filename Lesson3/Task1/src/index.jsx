@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchField from './search.jsx';
+import SearchField from './Search.jsx';
 import './index.scss';
 import './search.scss';
 

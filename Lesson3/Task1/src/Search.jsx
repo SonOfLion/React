@@ -1,8 +1,9 @@
 import React from 'react';
 
-export default Search = (props) =>  {
+const Search = (props) =>  {
     // console.log(props);
 
+  return (
   <div className='Search'>
     <h1 className='search__title'>
       {`Hello, ${props.name}. What to search for you?`}
@@ -12,5 +13,7 @@ export default Search = (props) =>  {
       <button className='search__button'>Search</button>
     </div>
   </div>
+  );
 };
-//++
+
+export default Search;

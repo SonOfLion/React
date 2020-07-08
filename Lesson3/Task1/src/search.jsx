@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SearchField = (props) =>  {
+export const Search = (props) =>  {
     // console.log(props);
 
   <div className='Search'>

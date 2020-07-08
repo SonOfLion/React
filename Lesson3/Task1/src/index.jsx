@@ -6,4 +6,4 @@ import './search.scss';
 
 const rootElem = document.querySelector("#root");
 
-ReactDOM.render(<SearchField name='Bob' />, rootElem);
+ReactDOM.render(<Search name='Bob' />, rootElem);

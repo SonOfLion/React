@@ -1,10 +1,9 @@
 import React from 'react';
+import './avatar.scss';
 import moment from 'moment';
-import './comment.scss';
 import UserInfo from './UserInfo';
 
 const formatDate = date => moment(new Date(date)).format('DD MMM YYYY');
-
 
 function Comment(props) {
   console.log(props)

@@ -18,6 +18,6 @@ function Comment(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Comment;

@@ -7,7 +7,7 @@ const UserAvatar = props => {
           src={props.avatarUrl}
           alt={props.name}
         />
-    )
-}
+    );
+};
 
 export default UserAvatar;

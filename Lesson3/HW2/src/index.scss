@@ -5,10 +5,26 @@ body {
 #root {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(190, 70, 70);
+
+}
+.profile__name {
+    display: inline-flex;
+    color: rgb(111, 60, 204);
+    margin: 10px 10px;
+    padding: 8px;
+    border: 3px solid rgb(190, 70, 70);
 }
 
-.greeting {
-    margin: auto;
+.profile__birth {
+    display: inline-flex;
+    color: orangered;
+    margin: 10px;
     padding: 8px;
-    border: 3px solid #eee;
+    border: 3px solid rgb(50, 211, 71);
 }

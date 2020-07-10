@@ -1,7 +1,5 @@
 import React from 'react';
 import UserAvatar from './Avatar';
-import './comment.scss';
-import 'moment';
 
 const UserInfo = props => {
     return (

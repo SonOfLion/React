@@ -1,7 +1,7 @@
 import React from 'react'
 import Profile from './profile';
 
-const userData = {
+const user = {
     firstName:'John',
     lastName:'Doe',
     birthDate:'1991-01-17T11:11:11.819Z',
@@ -9,7 +9,7 @@ const userData = {
 };
 
 const App = () => {
-    return (<Profile userData={userData}/>);
+    return (<Profile userData={user}/>);
 };
 
 export default App;

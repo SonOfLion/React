@@ -1,22 +1,21 @@
 import React from 'react';
 import moment from 'moment';
-import {Component} from 'react';
+// import {Component} from 'react';
 
-class Profile extends Component {
-    render(){
-    const ren = moment(this.props.user.birthDate).format("DD MMM YY");
-
+const Profile = (props) => {
+    // console.log(props);
+    const ren = moment(props.userData.birthDate).format("DD MMM YY");
+    // console.log(props);
     return (
         <div className="profile">
             <div className="prifile__name">
-                {`${this.props.user.firstName} ${this.props.user.lastName}`}
+                {`${props.userData.firstName} ${props.userData.lastName}`}
             </div>
             <div className="profile__birth">
-                {`Was born ${ren} in ${this.props.user.birthPlace}`}
+                {`Was born ${ren} in ${props.userData.birthPlace}`}
             </div>
         </div>
     );
-    };
 };
 
 export default Profile;

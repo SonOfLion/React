@@ -3,8 +3,6 @@ import moment from 'moment';
 
 const Greeting = (props) => {
     const age =  moment().diff(moment(props.birthDate), 'years');
-
-    console.log(age);
     
     return (
         <div className='greeting'>

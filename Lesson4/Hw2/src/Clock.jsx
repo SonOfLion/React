@@ -12,7 +12,8 @@ class Clock extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            localTime: moment(getTimeWithOffset(props.offset)).format('YYYY-MM-DD HH:mm')
+            localTime: moment(getTimeWithOffset(props.offset)).format('YYYY-MM-DD HH:mm'),
+            location:props.location
         };
 
         setInterval(() => {
@@ -25,8 +26,8 @@ class Clock extends Component {
     render() {
         return (
         <div className="clock">
-            <div className="clock__city">
-                {this.state.localTime}
+            <div className="clock__location">
+                {this.state.location}
             </div>
             <div className="clock__localtime">
                 {this.state.localTime}

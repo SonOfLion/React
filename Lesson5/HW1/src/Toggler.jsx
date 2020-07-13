@@ -8,7 +8,7 @@ class Toggler extends React.Component {
 
     changeBtnText = () => {
         this.setState((state, props) => {
-            return {button: state.button ? 'On': 'Off'};
+            return {button: state.button ==='Off' ? 'On': 'Off'};
         });;
     }
 

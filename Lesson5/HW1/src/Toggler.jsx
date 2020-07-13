@@ -8,9 +8,10 @@ class Toggler extends React.Component {
 
     changeBtnText = () => {
         this.setState((state, props) => {
-            return {button: state.button ? "On": "Off"};
+            return {button: state.button ? 'On': 'Off'};
         });;
     }
+
     render() {
         return (
             <button onClick={this.changeBtnText} className="toggler">

@@ -3,7 +3,7 @@ import React from 'react';
 class Toggler extends React.Component {
     constructor(props) {
     super(props);
-    this.state = {buton:'Off'};
+    this.state = {button:'Off'};
 
     this.handleClick = this.handleClick.bind(this);
     }

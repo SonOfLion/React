@@ -4,22 +4,19 @@ class Toggler extends React.Component {
     constructor(props) {
     super(props);
     this.state = {button:'Off'};
-
-    this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick() {
-    this.setState(state => ({
-        isToggleOn: !state.isToggleOn
-    }));
+    changeBtnText = () => {
+        this.setState((state, props) => {
+            return {button: state.button ? "On": "Off"};
+        });;
     }
-
     render() {
-    return (
-        <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'On' : 'Off'}
-        </button>
-    );
+        return (
+            <button onClick={this.changeBtnText} className="toggler">
+            {this.state.button}
+            </button>
+        )
     }
 }
 

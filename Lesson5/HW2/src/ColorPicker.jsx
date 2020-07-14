@@ -10,7 +10,7 @@ class ColorPicker extends Component {
     
     textOfColor = text => {
         this.setState({
-            color: text,
+            color: text
         });
     }
 

@@ -17,9 +17,7 @@ class Colors extends React.Component {
                         backgroundColor: RED
                     }} 
                     onClick={() => this.setBodyColor(RED)}
-                    className="colors__button"
-
-                />
+                    className="colors__button"/>
                 <button 
                     style={{
                         backgroundColor: GREEN

@@ -9,6 +9,10 @@ body {
     justify-content: center;
 }
 
+.worltime {
+    display:contents
+}
+
 .clock {
     display: flex;
     flex-direction: column;
@@ -24,6 +28,7 @@ body {
     margin-bottom: 8px;
     font-weight: 700;
     }
+
     &__time {
     border: 3px solid #ff7f50;
     border-radius: 8px;

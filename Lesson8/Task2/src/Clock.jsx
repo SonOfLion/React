@@ -4,7 +4,7 @@ import moment from 'moment';
 const setOffset = (offset) => {
     return moment()
     .utcOffset(offset)
-    .format("H:MM:SS AM");
+    .format("H:MM:SS A");
 };
 
 class Clock extends Component {
@@ -12,7 +12,7 @@ constructor(props) {
     super(props);
 
     this.state = {
-    time: setOffset(this.props.offset),
+    time: setOffset(this.props.offset)
     };
 };
 

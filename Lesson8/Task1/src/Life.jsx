@@ -16,9 +16,9 @@ class Life extends Component {
         console.log('shouldComponentUpdate(nextProps, nextState): decide to render or not to render');
     };
 
-    componentDidUpdate(prevProps, prevState){
+    componentDidUpdate(prevProps, prevState) {
         console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
-    }
+    };
 
     componentWillUnmount(){
         console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
@@ -27,7 +27,7 @@ class Life extends Component {
     render () {
         console.log('return React element to build DOM');
         return <div className="number">{this.props.number}</div>;
-    }
+    };
 };
 
 export default Life;

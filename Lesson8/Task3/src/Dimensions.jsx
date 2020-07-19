@@ -1,40 +1,40 @@
 import React, { Component } from 'react';
 
 class Dimensions extends Component{
-    constructor(props){
-        super(props);
-
-        const { innerWidth, innerHeight} = window;
-        this.state = {
-            width:innerWidth,
-            height: innerHeight,
-        };
+    state={
+        width:null,
+        height:null,
     };
 
-    componentDidMount () {
+    componentDidMount(){
         window.addEventListener('resize',this.onResize);
+        const {innerWidth,innerHeight}=window;
+        this.setDimension(innerWidth,innerHeight);
     };
 
-    componentWillUnMount () {
+    componentWillUnmount(){
         window.removeEventListener('resize',this.onResize);
     };
 
-    onResize = e => {
-        const { innerWidth, innerHeight } = e.target;
+    onResize=e=>{
+        const {innerWidth,innerHeight}=e.target;
+        this.setDimension(innerWidth,innerHeight);
+    };
 
+    setDimension=(width,height)=>{
         this.setState({
-            width:innerWidth,
-            height: innerHeight,
+            width,
+            height,
         });
-        document.title = `${innerWidth} x ${innerHeight}`;
+        document.title=`${innerWidth} x ${innerHeight}`;
     };
 
     render(){
-        return (
-        <div className="dimensions">
+    return (
+        <div className='dimensions'>
             {`${this.state.width}px - ${this.state.height}px`}
         </div>
-        );
+    );
     };
 };
 

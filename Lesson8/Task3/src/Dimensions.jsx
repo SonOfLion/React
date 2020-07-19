@@ -16,7 +16,7 @@ class Dimensions extends Component{
     };
 
     componentWillUnMount () {
-        window.removeaddEventListener('resize',this.onResize);
+        window.removeEventListener('resize',this.onResize);
     };
 
     onResize = e => {
@@ -26,7 +26,7 @@ class Dimensions extends Component{
             width:innerWidth,
             height: innerHeight,
         });
-        document.title = `${innerWidth} x ${innerHeight}`
+        document.title = `${innerWidth} x ${innerHeight}`;
     };
 
     render(){

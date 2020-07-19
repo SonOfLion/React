@@ -5,4 +5,4 @@ import App from './App';
 
 const rootElement = document.querySelector('#root');
 
-setTimeout(() => {ReactDOM.render(<App />, rootElement)}, 1000);
+ReactDOM.render(<App />, rootElement);

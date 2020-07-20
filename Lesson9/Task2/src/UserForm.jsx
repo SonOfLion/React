@@ -15,7 +15,7 @@ class UserForm extends Component {
             : value;
 
         this.setState({
-            [name]: value,
+            [name]: val,
         });
     };
 

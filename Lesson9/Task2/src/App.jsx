@@ -11,13 +11,11 @@ const user = {
 class App extends React.Component {
     createUser = (userData) => {
         console.log(userData);
-    }
+    };
 
     render() {
-    return (
-        <UserForm onSubmit = {this.createUser}/>
-        )
-    }
-}
+    return (<UserForm onSubmit = {this.createUser}/>);
+    };
+};
     
 export default App; 

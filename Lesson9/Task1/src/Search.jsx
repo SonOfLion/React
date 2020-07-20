@@ -16,7 +16,7 @@ class Search extends Component {
     
     render () {
         return(
-            <form className="search">
+            <form className="search" onSubmit={this.search}>
                 <input
                         type="text"
                         onChange={this.handleChange}

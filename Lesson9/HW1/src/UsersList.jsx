@@ -1,17 +1,41 @@
 import React, { Component } from 'react';
+import User from './User';
+import Filter from './Filter';
 
 class UsersList extends Component{
-    constructor (props) {
+    constructor(props) {
         super(props);
-
-        state = {
-            value : '',
-        };
-    };
+        this.state = {
+            value: "",
+        }
+    }
+    onChange = event => {
+        this.setState({
+            value: event.target.value
+        })
+    }  
 
     render () {
-        return (
+        let filtredUsersList = (this.state.value === ''
+        ? this.props.users
+        : this.props.users.filter(user => user.name.toLowerCase()
+        === this.state.value.toLowerCase()))
+        .map(
+            user => <User key={user.id}
+            {...user} />)
+        
 
+        return (
+            <>
+                <Filter 
+                onChange={this.onChange}
+                count={filtredUsersList.length}
+                filterText={this.state.value}
+                />
+                <ul className="users">
+                    {filtredUsersList}
+                </ul>
+            </>
         );
     };
 };

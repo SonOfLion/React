@@ -2,10 +2,10 @@ import React from 'react';
 
 const User = ({name, age}) =>{
     return (
-        <>
+        <li>
             <span className="user-name">{name}</span>
             <span className="user-age">{age}</span>
-        </>
+        </li>
     );
 };
 

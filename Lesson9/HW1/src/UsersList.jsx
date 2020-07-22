@@ -5,26 +5,27 @@ import Filter from './Filter';
 class UsersList extends Component{
     constructor(props) {
         super(props);
+        
         this.state = {
-            value: "",
-        }
-    }
+            value: '',
+        };
+    };
+
     onChange = event => {
         this.setState({
             value: event.target.value
-        })
-    }  
+        });
+    };
 
     render () {
         let filtredUsersList = (this.state.value === ''
         ? this.props.users
         : this.props.users.filter(user => user.name.toLowerCase()
-        === this.state.value.toLowerCase()))
+        .includes(this.state.value.toLowerCase())))
         .map(
             user => <User key={user.id}
-            {...user} />)
-        
-
+            {...user} />);
+    
         return (
             <>
                 <Filter 

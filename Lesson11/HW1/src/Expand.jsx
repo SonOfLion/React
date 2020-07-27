@@ -10,15 +10,19 @@ class Expand extends Component {
     };
 
     toggleButton = () => {
-        this.setState ({
-            visible:!this.state.visible//+++
-        });
+        this.setState({
+            visible: !this.state.visible,
+        });//+++
     };
 
     render () {
 
         const {title} = this.props;
-        const {children} = this.props;
+        let {children} = this.props;
+
+        if(!this.state.visible){
+            children = null;
+        };
 
         return (
             <div className="expand border">
@@ -28,7 +32,7 @@ class Expand extends Component {
                         {
                             this.setState.visible 
                             ?<i className="fas fa-chevron-up"></i>
-                            :<i className="fas fa-chevron-up"></i>
+                            :<i className="fas fa-chevron-down"></i>
                         }
                     </button>
                     <div className="expand__content">{children}</div>

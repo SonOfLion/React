@@ -31,8 +31,8 @@ class Expand extends Component {
                     <button className="expand__toggle-btn" onClick={this.toggleButton}>
                         {
                             this.setState.visible 
-                            ?<i className="fas fa-chevron-up"></i>
-                            :<i className="fas fa-chevron-down"></i>
+                            ?<i className="fa fa-chevron-up" aria-hidden="true"></i>
+                            :<i className="fa fa-chevron-down" aria-hidden="true"></i>
                         }
                     </button>
                     <div className="expand__content">{children}</div>

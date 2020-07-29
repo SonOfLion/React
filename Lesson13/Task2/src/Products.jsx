@@ -1,8 +1,8 @@
 import React from 'react';
-import Product from './Product';
 import { Link, Route, Switch } from 'react-router-dom';
+import Product from './Product';
 
-const Products = ({match}) => {
+const Products = ({ match }) => {
     return (
         <div className="page__content">
                 <h1>Products</h1>

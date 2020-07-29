@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Products () {
-    return(
+const Products = () => {
+    return (
         <div className="page__content">
             <h1>Products</h1>
             <p>We will add some products. Later... 😇</p>
@@ -11,4 +11,4 @@ function Products () {
     );
 };
 
-export default Products;
+export default Products; 

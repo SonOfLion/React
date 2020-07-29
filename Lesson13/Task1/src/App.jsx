@@ -4,7 +4,6 @@ import Contacts from './Contacts';
 import Products from './Products';
 import Home from './Home';
 
-
 const App = () => {
     return (
         <div className="page">

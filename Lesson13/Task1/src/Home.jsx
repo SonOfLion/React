@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function Home () {
+function Home () {
     return(
         <div className="page__content">
             <h1>🏠</h1>
@@ -9,3 +9,5 @@ export function Home () {
         </div>
     );
 };
+
+export default Home;

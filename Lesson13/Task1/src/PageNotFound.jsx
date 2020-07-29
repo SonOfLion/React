@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Contacts = () => {
+const PageNotFound = () => {
     return (
         <div className="page__content">
             <h1>404 😢</h1>
@@ -10,4 +10,4 @@ const Contacts = () => {
     );
 };
 
-export default Contacts; 
+export default PageNotFound; 

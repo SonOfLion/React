@@ -5,7 +5,7 @@ function Home () {
     return(
         <div className="page__content">
             <h1>🏠</h1>
-            <Link to="/products">To Products</Link>
+            <Link to="/">To Products</Link>
         </div>
     );
 };

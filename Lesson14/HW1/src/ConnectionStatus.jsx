@@ -24,8 +24,8 @@ function ConnectionStatus () {
     }, [status])
 
     return(
-        <div className="status">
-            {status ? 'online' : 'offline' }
+        <div className={`status ${status ? 'online' : 'offline'}`}>
+            {status}
         </div>
     );
 };

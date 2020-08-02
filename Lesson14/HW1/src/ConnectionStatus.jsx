@@ -24,10 +24,10 @@ function ConnectionStatus () {
     }, [status])
 
     return(
-        <div className={`status ${status ? 'online' : 'offline'}`}>
+        <div className={`status ${status === 'offline' ? 'status_offline' : ''}`}>
             {status}
-        </div>
-    );
+        </div>  
+        );
 };
 
 export default ConnectionStatus;

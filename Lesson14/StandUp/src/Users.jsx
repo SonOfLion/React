@@ -8,7 +8,7 @@ class Users extends Component {
         return (
             <BrowserRouter>
             <div className="page__content">
-                <h1>Users</h1>
+                    <h1>Users</h1>
                 <ul className="navigation">
                     <li className="navigation__item">
                         <Link to="/users/github">Github</Link>
@@ -17,7 +17,7 @@ class Users extends Component {
                         <Link to="/users/facebook">Facebook</Link>
                     </li>
                 </ul>
-                <Route  path={match.path}>
+                <Route  exact path={match.path}>
                     <span>Select user please</span>
                 </Route>
                 <Route path={`${match.path}/:userName`} component={User}></Route>

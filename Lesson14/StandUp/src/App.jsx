@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, Route, BrowserRouter, Switch } from 'react-router-dom'
+import { Link, Route, BrowserRouter, Switch } from 'react-router-dom';
 import Home from './Home.jsx';
-import User from './User.jsx';
 import Users from './Users.jsx';
 
 const App = () => {
@@ -12,11 +11,9 @@ const App = () => {
                     <li className="navigation__item">
                         <Link to="/">
                             Home
-                        </Link>
-                    </li>
-                    <li className="navigation__item">
-                        <Link to="/users">
-                            Users
+                        </Link></li>
+                    <li className="navigation__item"><Link to="/users">
+                        Users
                         </Link>
                     </li>
                 </ul>
@@ -24,7 +21,11 @@ const App = () => {
                     <Route exact path="/">
                         <Home/>
                     </Route>
-                    <Route path="/users" component={Users}/>
+                    <Route
+                        path="/users"
+                        component={Users}
+                    >
+                    </Route>
                 </Switch>
             </BrowserRouter>
         </div>

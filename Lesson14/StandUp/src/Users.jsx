@@ -17,7 +17,7 @@ class Users extends Component {
                         <Link to="/users/facebook">Facebook</Link>
                     </li>
                 </ul>
-                <Route  exact path={match.path}>
+                <Route exact path={match.path}>
                     <span>Select user please</span>
                 </Route>
                 <Route path={`${match.path}/:userName`} component={User}></Route>

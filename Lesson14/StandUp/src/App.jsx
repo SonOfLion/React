@@ -9,23 +9,18 @@ const App = () => {
             <BrowserRouter>
                 <ul className="navigation">
                     <li className="navigation__item">
-                        <Link to="/">
-                            Home
-                        </Link></li>
-                    <li className="navigation__item"><Link to="/users">
-                        Users
+                        <Link to="/">Home
+                        </Link>
+                    </li>
+                    <li className="navigation__item">
+                        <Link to="/users">
+                            Users
                         </Link>
                     </li>
                 </ul>
                 <Switch>
-                    <Route exact path="/">
-                        <Home/>
-                    </Route>
-                    <Route
-                        path="/users"
-                        component={Users}
-                    >
-                    </Route>
+                    <Route exact path="/"><Home /></Route>
+                    <Route path="/users" component={Users}/>
                 </Switch>
             </BrowserRouter>
         </div>

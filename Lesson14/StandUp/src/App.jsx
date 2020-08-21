@@ -18,10 +18,8 @@ const App = () => {
                         </Link>
                     </li>
                 </ul>
-                <Switch>
-                    <Route exact path="/"><Home /></Route>
-                    <Route path="/users" component={Users}/>
-                </Switch>
+                    <Route exact path="/">< Home /></Route>
+                    <Route path="/users" component={ Users }/>
             </BrowserRouter>
         </div>
     );

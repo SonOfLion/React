@@ -4,7 +4,7 @@ const User = (props) => {
     const [userData, setUserData] = useState({
         avatarUrl: null,
         userName: null,
-        userLocation: null
+        userLocation: null,
     });
 
     const userId = props.match.params.userName;

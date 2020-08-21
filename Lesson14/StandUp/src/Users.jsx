@@ -5,7 +5,7 @@ import { Link, Route, BrowserRouter, Switch } from 'react-router-dom'
 class Users extends Component {
     render() {
 
-        const {match} = this.props;
+        const { match } = this.props;
 
         return (
             <BrowserRouter>
@@ -19,12 +19,16 @@ class Users extends Component {
                             <Link to="/users/facebook">Facebook</Link>
                         </li>
                     </ul>
-                    <Route exact path={match.path}>
-                        <span>Select user please</span>
-                    </Route>
-                    <Route path={`${match.path}/:userName`} component={User}></Route>
+                    <Switch>
+                        <Route exact path={match.path}>
+                            <span>Select user please</span>
+                        </Route>
+                        <Route path={`${match.path}/:userName`} component={User}>
+                        </Route>
+                    </Switch>
                 </div>
-            </BrowserRouter>)
+            </BrowserRouter>
+        );
     };
 };
 

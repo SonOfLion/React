@@ -18,7 +18,7 @@ const App = () => {
                         </Link>
                     </li>
                 </ul>
-                    <Route exact path="/">< Home /></Route>
+                    <Route exact path="/"><Home/></Route>
                     <Route path="/users" component={ Users }/>
             </BrowserRouter>
         </div>

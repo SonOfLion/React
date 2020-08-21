@@ -21,7 +21,7 @@ class Users extends Component {
                     </ul>
                     <Switch>
                         <Route exact path={match.path}>
-                            <span>Select user please</span>
+                            <span>Select a user please</span>
                         </Route>
                         <Route path={`${match.path}/:userName`} component={User}>
                         </Route>

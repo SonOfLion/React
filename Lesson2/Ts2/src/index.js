@@ -29,7 +29,7 @@ const renderSeconds = time => {
             </div>
         );
 
-        ReactDOM.render(element, rootElement);
+    ReactDOM.render(element, rootElement);
 };
 
 renderSeconds(new Date());

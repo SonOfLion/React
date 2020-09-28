@@ -1,6 +1,6 @@
 import React from 'react';
 
-function UserAvatar ( props ) {
+function Avatar ( props ) {
     return (
         <img
             className="avatar"
@@ -10,4 +10,4 @@ function UserAvatar ( props ) {
     );
 };
 
-export default UserAvatar;
+export default Avatar;

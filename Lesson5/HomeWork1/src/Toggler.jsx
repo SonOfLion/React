@@ -7,14 +7,13 @@ class Toggler extends Component {
         this.state = {button: 'Off'};
 
         this.handleClick = this.handleClick.bind(this);
-    }
+    };
 
     handleClick(){
         this.setState(state => ({
             button:!state.button
-        }))
-        console.log(this.state.button)
-    }
+        }));
+    };
 
     render() {
         return (
@@ -24,6 +23,5 @@ class Toggler extends Component {
         );
     };
 };
-
 
 export default Toggler;
